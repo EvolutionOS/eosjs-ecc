@@ -17,7 +17,7 @@ module.exports = PrivateKey;
 
 /**
   @typedef {string} wif - https://en.bitcoin.it/wiki/Wallet_import_format
-  @typedef {string} pubkey - EOSKey..
+  @typedef {string} pubkey - EVOKey..
   @typedef {ecurve.Point} Point
 */
 
@@ -113,7 +113,7 @@ function PrivateKey(d) {
       @example activePrivate.getChildKey('mycontract').getChildKey('myperm')
     */
     function getChildKey(name) {
-      // console.error('WARNING: getChildKey untested against eosd'); // no eosd impl yet
+      // console.error('WARNING: getChildKey untested against evod'); // no evod impl yet
       const index = createHash('sha256').update(toBuffer()).update(name).digest()
       return PrivateKey(index)
     }
