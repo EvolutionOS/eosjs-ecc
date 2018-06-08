@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/EOSIO/eosjs-ecc.git"
+    "url": "git://github.com/EvolutionOS/eosjs-ecc.git"
   },
   "dependencies": {
     "bigi": "^1.4.2",

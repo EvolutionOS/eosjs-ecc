@@ -238,7 +238,7 @@ pubkey = PrivateKey.fromString(privateWif).toPublic().toString()
 # Browser
 
 ```bash
-git clone https://github.com/EOSIO/eosjs-ecc.git
+git clone https://github.com/EvolutionOS/eosjs-ecc.git
 cd eosjs-ecc
 npm install
 npm run build_browser
